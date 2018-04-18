@@ -84,7 +84,6 @@ public class CompteBancari {
             this.saldo = this.saldo + quantitat;
             resultat = true;
         }
-        System.out.println("CompteBancari.ingressar()");
         return resultat;
     }
 
