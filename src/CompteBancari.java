@@ -14,7 +14,7 @@ public class CompteBancari {
      */
     private String nom;
     private int numSecret;
-    private static float saldoInicial = (float) 100.0;
+    private static float saldoInicial = (float) 0.0;
     private float saldo;
 
     public CompteBancari(String nom, int numSecret) {
