@@ -87,7 +87,9 @@ public class CompteBancari {
         System.out.println("CompteBancari.ingressar()");
         return resultat;
     }
-
+    public void saludo2(){
+        System.out.println("Hi!");
+    }
     /**
      * Mètode per disminuir el valor del saldo del compte/objecte
      * @param quantitat valor en que es vol disminur la variable saldo
