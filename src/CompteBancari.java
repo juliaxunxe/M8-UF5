@@ -84,8 +84,11 @@ public class CompteBancari {
             this.saldo = this.saldo + quantitat;
             resultat = true;
         }
-        System.out.println("CompteBancari.ingressar()");
         return resultat;
+    }
+    
+    public void saludo(){
+        System.out.println("Hellow World");
     }
 
     /**
