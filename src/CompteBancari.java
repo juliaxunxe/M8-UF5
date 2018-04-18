@@ -14,7 +14,7 @@ public class CompteBancari {
      */
     private String nom;
     private int numSecret;
-    private static float saldoInicial = (float) 0.0;
+    private static float saldoInicial = (float) 100.0;
     private float saldo;
 
     public CompteBancari(String nom, int numSecret) {
@@ -84,11 +84,8 @@ public class CompteBancari {
             this.saldo = this.saldo + quantitat;
             resultat = true;
         }
+        System.out.println("CompteBancari.ingressar()");
         return resultat;
-    }
-    
-    public void saludo(){
-        System.out.println("Hellow World");
     }
 
     /**
