@@ -11,6 +11,7 @@ public class Aplicacio {
 
     public static void main(String[] args) {
 
+        System.err.println("eeeee");
         System.out.println("Introdueix el nom del propietari: ");
         String nom = cLlegir.dato();
         System.out.println(".................................................");
