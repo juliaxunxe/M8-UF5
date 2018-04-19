@@ -18,7 +18,9 @@ public class Aplicacio {
         int numero = cLlegir.datoInt();
         System.out.println(".................................................");
         CompteBancari compte = new CompteBancari(nom, numero);
-
+        compte.cobramentManteniment();
+        System.out.println("Cobrament del manteniment saldo actual: "  + compte.getSaldo());
+        System.out.println(".................................................");
         System.out.println("Introdueix la quantitat a ingressar: ");
         float quantitat = cLlegir.datoFloat();
         boolean resultat = compte.ingressar(quantitat);
@@ -29,7 +31,9 @@ public class Aplicacio {
             System.out.println(compte.mostrarDades());
         }
         System.out.println(".................................................");
-
+        compte.cobramentManteniment();
+        System.out.println("Cobrament del manteniment saldo actual: "  + compte.getSaldo());
+        System.out.println(".................................................");
         System.out.println("Introdueix la quantitat a extreure: ");
         quantitat = cLlegir.datoFloat();
         resultat = compte.extreure(quantitat);
@@ -41,6 +45,9 @@ public class Aplicacio {
             System.out.println("Ingrés realitzat correctament!");
             System.out.println(compte.mostrarDades());
         }
+        System.out.println(".................................................");
+        compte.cobramentManteniment();
+        System.out.println("Cobrament del manteniment saldo actual: "  + compte.getSaldo());
         System.out.println(".................................................");
     }
 }
