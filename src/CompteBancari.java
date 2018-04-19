@@ -16,6 +16,7 @@ public class CompteBancari {
     private int numSecret;
     private static float saldoInicial = (float) 100.0;
     private float saldo;
+    private static float manteniment = (float) 7.0;
 
     public CompteBancari(String nom, int numSecret) {
         /**
@@ -72,12 +73,17 @@ public class CompteBancari {
         return ("El propietari es diu: " + this.nom + " amb número secret: "
                 + this.numSecret + ". El saldo actual es: " + this.saldo);
     }
-
+    public float getSaldo(){
+        return this.saldo;
+    }
     /**
      * Mètode per augmentar el valor del saldo del compte/objecte
      * @param quantitat valor en que es vol augmentar la variable saldo del compte/objecte
      * @return retorna true si l'operació s'ha realtizat correctament o false si no s'ha pogut realtizar
      */
+    public void cobramentManteniment(){
+        this.saldo = this.saldo - CompteBancari.manteniment;
+    }
     public boolean ingressar(float quantitat) {
         boolean resultat = false;
         if (quantitat >= 0) {
